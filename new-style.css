@@ -1,0 +1,190 @@
+*,
+h2,
+h3,
+h1,
+h5,
+h6,
+h4,
+p,
+label {
+    font-family: 'Halis R', sans-serif;
+    color: black;
+}
+
+
+h4 {
+    font-size: 30px;
+}
+
+.dec_desc {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.form-ting {
+    border: solid 1px black;
+    padding: 5px 10px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.form-upload {
+    font-weight: bold;
+}
+
+.page-title:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    /* This will center the border. */
+    width: 12%;
+    /* Change this to whatever width you want. */
+    /* This creates some space between the element and the border. */
+    border-bottom: 1px solid black;
+    /* This creates the border. Replace black with whatever color you want. */
+}
+
+#myDIV,
+#myDIVXS,
+#myDIVSub,
+#myDIVSub-2,
+#myDIVSub-3,
+#myDIVSub-4 {
+    display: none;
+}
+
+span {
+    font-weight: bold;
+}
+
+.back-btn,
+.reject-btn,
+.approve-btn {
+    padding: 5px 100px;
+    margin: 20px 50px;
+}
+
+.row-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.back-btn {
+    border: solid 1px gray;
+}
+
+.back-btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.reject-btn {
+    background-color: #d55a4a;
+    color: white;
+}
+
+.reject-btn:hover {
+    background-color: #f5a59b;
+    color: black;
+}
+
+.approve-btn {
+    background-color: #e6e3d4;
+}
+
+.approve-btn:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+
+/* Hide the browser's default checkbox */
+.container-l input,
+.container-r input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+.checkmark-square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+
+/* On mouse-over, add a grey background color */
+.container-l:hover input~.checkmark,
+.container-r:hover input~.checkmark-square {
+    border: solid 1px black;
+}
+
+
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after,
+.checkmark-square:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-l input:checked~.checkmark:after,
+.container-r input:checked~.checkmark-square:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-l .checkmark:after {
+    left: 5px;
+    top: 5px;
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.container-r .checkmark-square:after {
+    left: 5px;
+    top: 5px;
+    width: 13px;
+    height: 13px;
+    background-color: black;
+}

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="offices/backend.css">
+    <link rel="stylesheet" type="text/css" href="offices/style.css">
+    <link rel="stylesheet" type="text/css" href="offices/usefulinfo-style.css">
+    <link rel="stylesheet" href="new-style.css">
+    <title>Pending Request Turnstile</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main Container Start -->
+        <div class="container mt-5 mb-5">
+            <h4 class="page-title mt-2">REQUESTOR</h4>
+
+            <div class="container mt-4 mb-2 form-group row">
+                <label for="#" class="col-md-2 col-form-label">Name:</label>
+                <input class="col-md-3 form-control" id="exampleFormControlSelect1">
+                </input>
+                <label for="#" class="col-md-2 col-form-label">Company:</label>
+                <input class="col-md-3 form-control" id="exampleFormControlSelect1">
+                </input>
+            </div>
+
+            <div class="container mt-4 mb-2 form-group row">
+                <label for="#" class="col-md-2 col-form-label">Contact No:</label>
+                <input class="col-md-3 form-control" id="exampleFormControlSelect1">
+                </input>
+                <label for="#" class="col-md-2 col-form-label">Email:</label>
+                <input class="col-md-3 form-control" id="exampleFormControlSelect1">
+                </input>
+            </div>
+
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <h4 class="page-title mt-2">REQUEST TURNSTILE RECORD</h4>
+
+            <div class="container mt-4 mb-2 form-group row">
+                <label for="#" class="col-md-2 col-form-label">Select Building:</label>
+                <select class="col-md-3 form-control" id="exampleFormControlSelect1">
+                    <option>Door House Company Ptd. Lte.</option>
+                    <option>2</option>
+                </select>
+                <label for="#" class="col-md-2 col-form-label">Select Tenant:</label>
+                <select class="col-md-3 form-control" id="exampleFormControlSelect1">
+                    <option>Mike Wazowski</option>
+                    <option>2</option>
+                </select>
+            </div>
+
+            <div class="container mt-4 mb-2 form-group row">
+                <label for="#" class="col-md-2 col-form-label">Type:</label>
+                <select class="col-md-3 form-control" id="exampleFormControlSelect1">
+                    <option>Type 1</option>
+                    <option>2</option>
+                </select>
+            </div>
+
+            <div class="container mt-4 mb-2 form-group row">
+                <label for="#" class="col-md-2 col-form-label">Access Card Number(s):</label>
+                <textarea class="form-control col-md-8" id="#" rows="3"></textarea>
+            </div>
+
+            <div class="container mt-4 mb-2 form-group row">
+                <label for="#" class="col-md-2 col-form-label">Start Period:</label>
+                <select class="col-md-3 form-control" id="exampleFormControlSelect1">
+                    <option>20pm</option>
+                    <option>2</option>
+                </select>
+                <label for="#" class="col-md-2 col-form-label">End Period:</label>
+                <select class="col-md-3 form-control" id="exampleFormControlSelect1">
+                    <option>9am</option>
+                    <option>2</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <h4 class="page-title mt-2 dateLabel">BASIS FOR DISCLOSURE BY RQAM</h4>
+            <br>
+            <div class="form-check">
+                <label class="container container-l"> The Applicant has obtained consent from the individual(s)
+                    to whom the
+                    access card
+                    numbers(s) relate
+                    for
+                    RQAM to disclose the requested turnstile records for the following purposes:
+                    <input id="input-1" type="checkbox">
+                    <span class="checkmark"></span></label>
+
+                <div id="myDIV" class="container mt-3">
+                    <textarea class="input-1 form-control col-md-10" id="#" rows="5" placeholder="Please provide detail"
+                        style="text-transform: uppercase;"></textarea>
+                    <p class="mt-4">Please have the data subject sign and upload the consent form below.</p>
+                    <div class="row mb-3">
+                        <div class="col-md-2 mt-2">
+                            <p class="form-ting " href="#" download="">Download Form</p>
+                        </div>
+                        <div class="col-md-2 mt-2 upload-btn-wrapper">
+                            <input type="file" multiple name="file" id="file" onchange="javascript:updateList()"
+                                accept="application/pdf,application/vnd.ms-excel" />
+                            <p class="form-ting">Upload Files</p>
+                        </div>
+                    </div>
+
+                    <div class=" row">
+                        <div class="col mt-3">
+                            <h5 class="form-upload">Uploaded Form(s):</h5>
+                            <div id="fileList"></div>
+                        </div>
+                    </div>
+                    <hr style="border: solid 1px gray; width: 19%;">
+                </div>
+            </div>
+
+            <div class="container mt-5 mb-5">
+                <h4 class="page-title mt-2 dateLabel">REPRESENTATIONS, WARRANTIES AND UNDERTAKINGS</h4>
+                <p class="dec_desc">The Applicant represents, warrants and undertakes to RQAM that:</p>
+                <p class="dec_desc">(a) the matters set forth in this form, including the reasons and purposes for the
+                    Applicant’s
+                    request for turnstile records and their proposed use are true and accurate;
+                </p>
+                <p class="dec_desc">(b) the turnstile records requested relate to employees or former employees of the
+                    Applicant;
+                </p>
+                <p class="dec_desc">(c) Applicant shall keep all turnstile records conﬁdential, and not make further
+                    disclosures
+                    of the
+                    turnstile records unless the Applicant shall have obtained the prior written consent of
+                    RQAM, and it
+                    shall only use and disclose the turnstile records disclosed to it by RQAM strictly for the
+                    purposes
+                    identiﬁed by the Applicant above ("Purpose"), and that it will ensure and procure that the
+                    turnstile
+                    records are only accessed by the Applicant’s employees strictly on a need-to-know basis;
+                </p>
+                <p class="dec_desc">(d) it will only use the turnstile records within Singapore and not transfer the
+                    same
+                    overseas;
+                </p>
+                <p class="dec_desc">(e) it has at all times complied with and will continue to comply with the
+                    requirements
+                    of
+                    the PDPA
+                    in respect of the collection, use, disclosure and other handling of any personal data
+                    comprised
+                    within the turnstile records. The Applicant shall provide RQAM such assistance as it may
+                    require in
+                    meeting RQAM’s own obligations under the PDPA;
+                </p>
+                <p class="dec_desc">(f) without prejudice to the generality of the foregoing, it shall employ reasonable
+                    administrative,
+                    physical and technical safeguards to ensure that the turnstile records are afforded
+                    protection in
+                    accordance
+                    with the PDPA and to prevent unauthorised access, copying, modiﬁcation, storage,
+                    reproduction,
+                    display or distribution of the turnstile records;
+                </p>
+                <p class="dec_desc">(g) it shall not use any personal data comprised in the turnstile records for any
+                    other
+                    purpose other
+                    than the Purpose or to disclose such personal data in individually identiﬁable form without
+                    the
+                    express authorisation of RQAM; and
+                </p>
+                <p class="dec_desc">it shall immediately destroy the turnstile records when it is no longer required for
+                    the
+                    Purpose and
+                    notify RQAM thereof in writing.</p>
+            </div>
+
+            <div class="container mt-5 mb-5">
+                <h4 class="page-title mt-2 dateLabel">INDEMNITY</h4>
+                <p class="dec_desc">The Applicant agrees and undertakes to RQAM to fully defend, indemnify and hold
+                    harmless
+                    RQAM and its
+                    related
+                    corporations or associated companies as well as their respective employees, representatives, agents
+                    and
+                    officers (“Indemnitees”) from and against any claim, action, demand or complaint, as well as all
+                    liabilities, judgments, penalties, compounds, losses, costs, damages and expenses that any or all of
+                    the
+                    Indemnitees may suffer in connection with any breach of this letter agreement, any
+                    misrepresentation,
+                    unauthorised use of the turnstile records and any failure to comply with any data protection or
+                    privacy
+                    laws
+                    in any relevant jurisdictions, and whether arising on account of the actions of the Applicant, its
+                    employees, representatives or agents or otherwise howsoever. </p>
+            </div>
+
+            <div class="container mt-5 mb-5">
+                <h4 class="page-title mt-2 dateLabel">DECLARATION</h4>
+                <p class="dec_desc">The Applicant understands that the turnstile records which it has requested may
+                    constitute
+                    personal data
+                    conferred protection under the PDPA. The Applicant acknowledges and agrees that it collects, uses
+                    and/or
+                    discloses personal data at its own risk and it shall be fully responsible, for ensuring that all
+                    requirements at law relating thereto, including the PDPA, have been complied with. </p>
+                <p class="dec_desc">The Applicant represents that its representations and information provided in this
+                    form
+                    are
+                    accurate and
+                    correct, and that it is aware that RQAM is relying on these representations and information in
+                    compliance
+                    with its own obligations under the PDPA. The Applicant agrees and undertakes to be bound by that the
+                    matters
+                    set forth in this form (including without limitation the indemnity contained in Part 5).</p>
+                <p class="dec_desc">The Applicant agrees to fully cooperate with RQAM and provide it as much assistance
+                    and
+                    information as may be
+                    reasonably necessary for RQAM to efficiently locate the turnstile records the Applicant seeks to
+                    retrieve.
+                    The Applicant also acknowledges that its request will not be responded to until all of the
+                    information
+                    requested and payment of administrative fees are received by RQAM.</p>
+                <p class="dec_desc">The Applicant acknowledges and agrees that its request is subject to approval by
+                    RQAM
+                    and
+                    that the fees paid
+                    are not refundable under any circumstances, including without limitation where the turnstile records
+                    that
+                    the Applicant seeks cannot be found or is not in the possession or control of RQAM or RQAM is
+                    otherwise
+                    unable to provide the turnstile records. </p>
+            </div>
+
+            <div class="container mt-5 mb-5">
+                <h4 class="page-title mt-2 dateLabel ">CONSENT</h4>
+                <br>
+                <div class="form-check">
+                    <label class="container container-l"> I agree to all of the above.
+                        <input id="input" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    <div class="row-btn row">
+                        <a href="#" class="back-btn">Back</a>
+                        <!-- <a class="reject-btn" href="#">Reject</a> -->
+                        <a class="approve-btn" href="#">Approve</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Container End -->
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="new-script.js"></script>
+    <script src="file-uploadname.js"></script>
+
+</body>
+
+</html>
